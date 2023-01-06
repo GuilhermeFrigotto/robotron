@@ -1,0 +1,99 @@
+.robotron {
+    background: url(../img/estrutura.png) no-repeat;
+    background-position: center center;
+    width: 500px;
+    margin: 0 auto;
+    flex-basis: 40%;
+    position: relative;
+}
+
+
+.titulo {
+    transform: rotate(180deg);
+    font-weight: 500;
+    font-size: 130px;
+    position: absolute;
+    bottom: 7rem;
+    left: -3rem;
+    top: 30rem;
+    line-height: 0.8;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    color: rgba(255,255,255,0.8);
+}
+
+.wrapper {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 530px;
+    height: 465px;
+
+  }
+
+  img{
+    height: 465px;
+    width: 530px;
+    margin: 0;
+    text-align: center;
+  }
+
+  #slide1, #slide2, #slide3, #slide4, #slide5,#slide6{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-left: -100px;
+    padding: 0;
+    opacity: 0;
+    font-size: 75px;
+  }
+
+  .navigation{
+    position: absolute;
+    bottom: 0px;
+    right: 15px;
+    top: 40px;
+    margin: 0;
+    padding: 0;
+  }
+
+  li{
+    color: transparent;
+  }
+
+  .btn {
+    float: left;
+    margin: 6px;
+    width: 85px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid white;
+  }
+
+  .btn a img {
+    width: 85px;
+    height: 50px;
+    display: block;
+    letter-spacing: 2px;
+    font-size: 12px;
+  }
+
+  .btn:hover {
+    transform: scale(1.2);
+    transition: 0.1s ease-in;
+    background-color: rgba(0,0,0,0.1);
+  }
+
+  #slide1:target,#slide2:target,#slide3:target,#slide4:target,#slide5:target,#slide6:target{
+    animation: slide 1.4s ease-in-out forwards;
+  }
+
+  @keyframes slide {
+    o%{font-size:0px; opacity: 1;}
+    100%{font-size:75px; opacity: 1;}
+  }
